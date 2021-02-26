@@ -13,7 +13,7 @@ class TestLab1(unittest.TestCase):
 
   def test_typeError(self):
     lab = lab1()
-    self.assertRaises(ValueError, lab.lab, 242, 12, 25, 12, 2000)
+    self.assertEqual(lab.lab(242, 12, 25, 12, 2000), None)
 
 if __name__ == '__main__':
     unittest.main()
